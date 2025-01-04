@@ -44,13 +44,6 @@ This project requires Python and a few libraries to be installed. You can set up
 - Players take turns marking their symbol in empty cells.
 - The first player to get three of their symbols in a row, column, or diagonal wins.
 - If the grid is full and no one wins, the game is a draw.
-## Interface Images
-Here are some screenshots of the GUI interface:
-
-Game Board: The grid where players make their moves.
-Settings Page: Choose your symbol and select difficulty.
-Gameplay Page: The main screen showing the active game.
-(Screenshot examples can be added here by capturing your GUI interface)
 
 ## Credits
 - Creator: Muhammad Hassan
