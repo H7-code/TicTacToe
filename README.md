@@ -27,6 +27,8 @@ This project requires Python and a few libraries to be installed. You can set up
   pip install -r requirements.txt
 4. The requirements.txt file includes:
 - streamlit: For the GUI interface.
+## Screenshot
+![Tic Tac Toe Screenshot](images/screenshot.png)
 ## How to Play
 - Open the game by running the following command:
   ```bash
