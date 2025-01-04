@@ -51,7 +51,4 @@ This project requires Python and a few libraries to be installed. You can set up
 - Creator: Muhammad Hassan
 - GitHub Repository: https://github.com/H7-code/TicTacToe
 ## Closing Message
-We hope you enjoy this game! If you have any suggestions, feel free to contribute or reach out. Happy Gaming! 🎮
-"""
-This `README.md` provides a comprehensive guide to your project, including detailed instructions on how to clone, set up, play, and navigate the game. It also credits you as the creator and includes a closing message for users.
-"""
+<span style="color:blue; font-weight:bold;">We hope you enjoy this game! If you have any suggestions, feel free to contribute or reach out. Happy Gaming! 🎮</span>
