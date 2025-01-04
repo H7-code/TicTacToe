@@ -73,6 +73,21 @@ def main():
         st.session_state.difficulty = None
         st.session_state.current_turn = None
         st.session_state.result = None
+        st.session_state.player_name = ""
+        st.session_state.wins = 0
+        st.session_state.losses = 0
+
+    # Get player name if not set
+    if st.session_state.player_name == "":
+        st.subheader("Enter your name")
+        player_name = st.text_input("Name", "")
+        if player_name:
+            st.session_state.player_name = player_name
+            st.session_state.wins = 0
+            st.session_state.losses = 0
+
+    # Display the score
+    st.subheader(f"Score: {st.session_state.player_name} - Wins: {st.session_state.wins} | Losses: {st.session_state.losses}")
 
     # Game setup
     if st.session_state.player_symbol is None:
@@ -107,6 +122,7 @@ def main():
                         st.session_state.board[i] = st.session_state.player_symbol
                         if check_winner(st.session_state.board, st.session_state.player_symbol):
                             st.session_state.result = "You win!"
+                            st.session_state.wins += 1
                         elif all(st.session_state.board):
                             st.session_state.result = "It's a draw!"
                         else:
@@ -124,6 +140,7 @@ def main():
                 st.session_state.board[move] = st.session_state.computer_symbol
                 if check_winner(st.session_state.board, st.session_state.computer_symbol):
                     st.session_state.result = "Computer wins!"
+                    st.session_state.losses += 1
                 elif all(st.session_state.board):
                     st.session_state.result = "It's a draw!"
                 else:
